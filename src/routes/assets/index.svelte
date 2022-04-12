@@ -30,8 +30,8 @@
 		<div class="flex flex-wrap gap-20">
 			{#if userNFTS}
 				{#each userNFTS as data, index (index)}
-					<img src={data['image']} alt="" />
-                    <div>{data['edition']}</div>
+					<!-- <img src={data['image']} alt="" /> -->
+                    <div>{data['title']}</div>
 				{/each}
 			{/if}
 		</div>
