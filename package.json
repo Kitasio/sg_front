@@ -32,6 +32,7 @@
   "type": "module",
   "dependencies": {
     "gsap": "^3.9.1",
+    "svelte-adapter-static-digitalocean": "^0.0.4",
     "svelte-aid": "^0.0.11",
     "svelte-web3": "^3.3.8"
   }

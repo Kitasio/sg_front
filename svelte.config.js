@@ -1,19 +1,15 @@
-// svelte.config.js
-import adapter from '@sveltejs/adapter-static';
+import adapter from 'svelte-adapter-static-digitalocean';
 
 export default {
-	kit: {
-		adapter: adapter({
-			// default options are shown
-			pages: 'build',
-			assets: 'build',
-			fallback: null,
-			precompress: false
-		}),
-
-		prerender: {
-			// This can be false if you're using a fallback (i.e. SPA mode)
-			default: true
-		}
-	}
+    kit: {
+        adapter: adapter({
+            // default options are shown
+            pages: 'build',
+            assets: 'build',
+            fallback: '404.html',
+            precompress: false,
+            spec: '.do/spec.yaml',
+            name: ''
+        })
+    }
 };
